@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+}
+
+.GithubSearch .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.GithubSearch .header form input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 22px;
+    color: red;
+    border: 1px solid #777;
+    padding: 0px 10px;
+}
+
+.GithubSearch .header form button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: red;
+    border: 1px solid #777;
+    padding: 0px 10px;
+    font-weight: bold;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.boxes-repos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes-repos .box{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes-repos .box .repo-name{
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control .stars-lenght,
+.control .view-repo {
+    background-color: blueviolet;
+    border: 1px solid #ffffff;
+    color: #eee;
+    padding: 2px 6px;
+}
