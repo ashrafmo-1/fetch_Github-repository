@@ -12,12 +12,12 @@ btnSearch.addEventListener('click', (ele) => {
 
 const showResposResult = () => {
     if(inputSearch.value === '') {
-        repositorycontent.innerHTML = 'undefined any repository';
+        repositorycontent.innerHTML = 'undefined any repository'; // on not found any reository
     } else {
         fetch(`https://api.github.com/users/${inputSearch.value}/repos`).then((result) => result.json())
         .then((repository) => {
-            console.log(repository);
-            repositorycontent.innerHTML = ``;
+            console.log(repository); // <===== print repository in console
+            repositorycontent.innerHTML = ``; // <===== impty repository content to run new repository
             // add all repositories to boxes-repos <=====
             repository.forEach((repos) => {
                 // master div <=====
@@ -37,7 +37,7 @@ const showResposResult = () => {
                 visetRepo.className = 'view-repo'
                 const textLink = document.createTextNode('viset repository')
                 visetRepo.appendChild(textLink)
-                visetRepo.href = `https://github.com/${inputSearch.value}/${repos.name}`
+                visetRepo.href = `https://github.com/${inputSearch.value}/${repos.name}` // repository link
                 visetRepo.setAttribute('target', '_blank')
                 controlsRepository.appendChild(visetRepo)
                 // get starts length<=====
