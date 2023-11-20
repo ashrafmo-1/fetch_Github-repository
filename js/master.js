@@ -4,7 +4,6 @@ const btnSearch = document.querySelector('.search')
 const inputSearch = document.querySelector('input')
 const repositorycontent = document.querySelector('.boxes-repos')
 
-
 btnSearch.addEventListener('click', (ele) => {
     ele.preventDefault()
     showResposResult()
