@@ -33,13 +33,13 @@ const showResposResult = () => {
                 const controlsRepository = document.createElement('div');
                 controlsRepository.className = 'control';
                 //  link to the repository <=====
-                const visetRepo = document.createElement('a');
-                visetRepo.className = 'view-repo';
-                const textLink = document.createTextNode('viset repository');
-                visetRepo.appendChild(textLink)
-                visetRepo.href = `https://github.com/${inputSearch.value}/${repos.name}`; // repository link
-                visetRepo.setAttribute('target', '_blank');
-                controlsRepository.appendChild(visetRepo);
+                const visitRepo = document.createElement('a');
+                visitRepo.className = 'view-repo';
+                const textLink = document.createTextNode('visit repository');
+                visitRepo.appendChild(textLink)
+                visitRepo.href = `https://github.com/${inputSearch.value}/${repos.name}`; // repository link
+                visitRepo.setAttribute('target', '_blank');
+                controlsRepository.appendChild(visitRepo);
                 // get starts length<=====
                 const starsSpan = document.createElement('span');
                 starsSpan.className = 'stars-lenght';
